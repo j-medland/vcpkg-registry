@@ -1,0 +1,32 @@
+
+Source: ni-labview-cintools
+Version: 1.0.0
+Description: NI's cintools provided with LabVIEW
+
+Feature: 2020
+Description: cintools for LabVIEW 2020
+Build-Depends:
+
+Feature: 2019
+Description: cintools for LabVIEW 2019
+Build-Depends:
+
+Feature: 2018
+Description: cintools for LabVIEW 2018
+Build-Depends:
+
+Feature: 2017
+Description: cintools for LabVIEW 2017
+Build-Depends:
+
+Feature: 2016
+Description: cintools for LabVIEW 2016
+Build-Depends:
+
+Feature: 2015
+Description: cintools for LabVIEW 2015
+Build-Depends:
+
+Feature: 2014
+Description: cintools for LabVIEW 2014
+Build-Depends:

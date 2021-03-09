@@ -28,7 +28,7 @@ if(VCPKG_TARGET_IS_WINDOWS)
     # Get the top level directory to copy files from
     file(TO_NATIVE_PATH "C:/${LV_PRGRM_FILES_ROOT}/National Instruments/LabVIEW ${LV_VERSION}/cintools" LABVIEW_CINTOOLS_ROOT)
 
-    if(NOT EXISTS LABVIEW_CINTOOLS_ROOT)
+    if(NOT EXISTS ${LABVIEW_CINTOOLS_ROOT})
         message(FATAL_ERROR " The directory \"${LABVIEW_CINTOOLS_ROOT}\" does not exist!")
     endif()
     
@@ -50,7 +50,7 @@ elseif (VCPKG_TARGET_IS_LINUX)
 # Get the top level directory to copy files from
 file(TO_NATIVE_PATH "/usr/local/natinst/${LV_DIR_NAME}/cintools" LABVIEW_CINTOOLS_ROOT)
 
-if(NOT EXISTS LABVIEW_CINTOOLS_ROOT)
+if(NOT EXISTS ${LABVIEW_CINTOOLS_ROOT})
     message(FATAL_ERROR " The directory \"${LABVIEW_CINTOOLS_ROOT}\" does not exist!")
 endif()
 

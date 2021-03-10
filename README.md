@@ -1,6 +1,6 @@
 # `vcpkg-registry`
 
-*Oh dip* - [`vcpkg` now supports custom registries](https://devblogs.microsoft.com/cppblog/registries-bring-your-own-libraries-to-vcpkg/).
+*Oh dip* - `vcpkg` [now supports custom registries](https://devblogs.microsoft.com/cppblog/registries-bring-your-own-libraries-to-vcpkg/).
 
 ## Setup `vcpkg` to use Manifests and Registries
 First ensure that the most up-to-date `vcpkg` is in use by pulling the latest release and calling the bootstrap script for your target.

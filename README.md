@@ -11,7 +11,7 @@ For Windows Users this can be accomplished by using the *Environment Variables G
 
 ## Setup Your Project Manifest and `vcpkg-configuration`
 
-Add `vcpkg-configuration.json` to the same directory as the CMakeLists.txt in your project which specifies where vcpkg can resolve different dependencies
+Add `vcpkg-configuration.json` to the same directory as the CMakeLists.txt in your project which specifies where `vcpkg` can resolve different dependencies
 
 ```json
 {
@@ -24,7 +24,7 @@ Add `vcpkg-configuration.json` to the same directory as the CMakeLists.txt in yo
     ]
   }
 ```
-The project manifest `vcpkg.json` can be used as though the packages are in vcpkg's main registry:
+The project manifest `vcpkg.json` can be used as though the packages are in `vcpkg`'s main registry:
 ```json
 {
     "name": "my-lovely-project",

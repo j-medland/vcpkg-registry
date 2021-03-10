@@ -14,6 +14,10 @@ elseif("2015" IN_LIST FEATURES)
     set(LV_VERSION "2015")
 elseif("2014" IN_LIST FEATURES)
     set(LV_VERSION "2014")
+elseif("2013" IN_LIST FEATURES)
+    set(LV_VERSION "2013")
+elseif("2012" IN_LIST FEATURES)
+    set(LV_VERSION "2012")
 endif()
 
 # install based on target

@@ -30,3 +30,11 @@ Build-Depends:
 Feature: 2014
 Description: cintools for LabVIEW 2014
 Build-Depends:
+
+Feature: 2013
+Description: cintools for LabVIEW 2013
+Build-Depends:
+
+Feature: 2012
+Description: cintools for LabVIEW 2012
+Build-Depends:

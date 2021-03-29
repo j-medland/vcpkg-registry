@@ -12,5 +12,10 @@ set(${LABVIEW_CINTOOLS_PKG_NAME}_INCLUDE_DIRS "${LVCINTOOLS_PATH}/include" CACHE
 if(VCPKG_TARGET_TRIPLET MATCHES "windows")
     set(${LABVIEW_CINTOOLS_PKG_NAME}_LIBRARIES "${LVCINTOOLS_PATH}/lib/labviewv.lib" CACHE PATH "LabVIEW CINTOOLS Static Library Path")
 elseif(VCPKG_TARGET_TRIPLET MATCHES "linux")
-    set(${LABVIEW_CINTOOLS_PKG_NAME}_LIBRARIES "${LVCINTOOLS_PATH}/lib/labviewl.so" CACHE PATH "LabVIEW CINTOOLS Static Library Path")
+    #shared library chandged its name between different versions - check for liblv.so
+    if(EXISTS "${LVCINTOOLS_PATH}/lib/liblv.so")
+        set(${LABVIEW_CINTOOLS_PKG_NAME}_LIBRARIES "${LVCINTOOLS_PATH}/lib/liblv.so" CACHE PATH "LabVIEW CINTOOLS Static Library Path")
+    else()
+        set(${LABVIEW_CINTOOLS_PKG_NAME}_LIBRARIES "${LVCINTOOLS_PATH}/lib/labviewl.so" CACHE PATH "LabVIEW CINTOOLS Static Library Path")
+    endif()
 endif()

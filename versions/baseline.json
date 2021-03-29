@@ -1,5 +1,5 @@
 {
     "default": {
-        "ni-labview-cintools": {"baseline":"1.0.3", "port-version":0}
+        "ni-labview-cintools": {"baseline":"1.0.4", "port-version":0}
     }
 }
